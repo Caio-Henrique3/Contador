@@ -1,0 +1,67 @@
+body{
+    background: rgb(107, 107, 241);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px black;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #ffffff; 
+    color: black; 
+    border: 2px solid rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input {
+    border-radius: 4px;
+}
+
+.progress{
+    margin-top: 18px;
+    height: 15px;
+    background-color: #777;
+    position: relative;
+    border-radius: 5px;
+}
+
+.progress .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: #47cf4e;
+   animation: progress-animation 5s infinite;
+   border-radius: 5px;
+}
+
+@keyframes progress-animation{
+    0% { width: 0%; }
+    100% { width: 100%}
+}
+
+.letra {
+    font: normal 15px Arial;
+    text-align: center;
+}
