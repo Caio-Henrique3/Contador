@@ -16,11 +16,15 @@ function contador(){
         resultado.innerHTML = `Não é possível iniciar o contado sem o número de passo`;
     } else {
         resultado.innerHTML = ` `;
-        progress.style.display = 'block';
         let i = Number(inicio.value);
         let f = Number(fim.value);
         let p = Number(passo.value);
-
+        
+        if (p == 0) {
+            alert("Passo não pode ser 0, então será calculado com valor 1!");
+            p = 1;
+        }
+        progress.style.display = 'block';
         intervalo = setTimeout(function(){
             if (i < f) {
                 progress.style.display = 'none';
